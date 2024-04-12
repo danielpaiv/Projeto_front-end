@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 
@@ -53,6 +54,7 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
 //        add(jPasswordField1);
 
         //Para chamar a ação do botão com o metodo @override
+
         jButton.addActionListener(this::botao1);
         jButton2.addActionListener(this:: botao2);
 
@@ -65,9 +67,6 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
         menu.setVisible(true);
         dispose();//Fecha as janelas
 
-
-
-
 //        JOptionPane.showMessageDialog(
 //                null, "Bortao 1", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
     }
@@ -78,9 +77,6 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
         PainelLogin painelLogin = new PainelLogin();
         painelLogin.setVisible(true);
         dispose();
-
-
-
 
 //        JOptionPane.showMessageDialog(
 //                null, "Bortao 2", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte

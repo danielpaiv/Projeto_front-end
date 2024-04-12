@@ -4,7 +4,8 @@ import java.awt.event.ActionEvent;
 
 public class PainelCadastro extends JFrame{
 
-    JTextField text;
+    //Variaveis das caixas de texto
+    JTextField text1;
     JTextField text2;
     JTextField text3;
     JTextField text4;
@@ -17,7 +18,7 @@ public class PainelCadastro extends JFrame{
     private JButton enviar;
 
     public PainelCadastro() {
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //janela
         setTitle("Cadastro");
         setVisible(true);// renderiza a janela
@@ -28,30 +29,29 @@ public class PainelCadastro extends JFrame{
         setLocationRelativeTo(null);// Ajusta a janela para o centro da tela
         setLayout(null);
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Texto
         JLabel jLabel1 = new JLabel("Nome");
         jLabel1.setBounds(100,20,50,40);
         add(jLabel1);
 
-        //Texto
         JLabel jLabel2 = new JLabel("Sobre Nome");
         jLabel2.setBounds(100,50,70,40);
         add(jLabel2);
 
-        //Texto
         JLabel jLabel3 = new JLabel("Cpf");
         jLabel3.setBounds(100,80,70,40);
         add(jLabel3);
 
-        //Texto
         JLabel jLabel4 = new JLabel("Telefone");
         jLabel4.setBounds(100,110,70,40);
         add(jLabel4);
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Caixa de texto
-        text = new JTextField("");
-        text.setBounds(200,30,130,20);
-        add(text);
+        text1 = new JTextField("");
+        text1.setBounds(200,30,130,20);
+        add(text1);
 
         text2 = new JTextField("");
         text2.setBounds(200,60,130,20);
@@ -66,19 +66,36 @@ public class PainelCadastro extends JFrame{
         add(text4);
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Botao enviar
         JButton jButton = new JButton("enviar");
-        jButton.setBounds(130,200,100,30);
+        jButton.setBounds(210,150,100,30);
         add(jButton);
 
+        //Botao voltar
+        JButton jButton2 = new JButton("Voltar");
+        jButton2.setBounds(10,10,70,20);
+        add(jButton2);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //Chama o evento do botão
         jButton.addActionListener(this::enviar);
+        jButton2.addActionListener(this::voltar);
 
     }
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    //Botão voltar
+    private void voltar(ActionEvent actionEvent) {
+        PainelInicio painelInicio = new PainelInicio();//Chama a janela desejada
+        painelInicio.setVisible(true);
+        dispose();//fecha a janela
+    }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Botão enviar
     private void enviar(ActionEvent actionEvent) {
-
-        JOptionPane.showMessageDialog(null,text.getText());
+        //Mostra um alerta com o texto da caixa
+        JOptionPane.showMessageDialog(null,text1.getText());
         JOptionPane.showMessageDialog(null,text2.getText());
 
 

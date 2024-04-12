@@ -56,17 +56,14 @@ public class PainelPricipal extends JFrame {
         jButton3.setBackground(new Color(21, 81, 213));
         add(jButton3);
 
-        //Para chamar a ação do botão com o metodo @override]
-        jButton.addActionListener(this::botao4);
-
-        jButton2.addActionListener(this:: botao3);
-
+        //Chama o evento do botão
+        jButton.addActionListener(this::botao4);//Botão cadastrar
+        jButton2.addActionListener(this:: botao3);//Botão consultar
         jButton3.addActionListener(this::botao5);//Botão voltar
 
     }
 
     private void botao5(ActionEvent actionEvent) {//Botão voltar
-
         PainelInicio painelInicio = new PainelInicio();//Chama a janela desejada
         painelInicio.setVisible(true);
         dispose();//fecha a janela
@@ -76,7 +73,6 @@ public class PainelPricipal extends JFrame {
     }
 
     private void botao3(ActionEvent actionEvent) {//Botão consultar
-
 
 //        JOptionPane.showMessageDialog(
 //                null, "Consultar", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
