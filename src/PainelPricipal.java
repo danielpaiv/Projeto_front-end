@@ -74,9 +74,6 @@ public class PainelPricipal extends JFrame {
 
     private void botao3(ActionEvent actionEvent) {//Botão consultar
 
-//        JOptionPane.showMessageDialog(
-//                null, "Consultar", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
-
 
     }
     private void botao4(ActionEvent actionEvent) {//Botão cadastrar
