@@ -25,7 +25,7 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
 
 
         //Botao 1
-        JButton jButton = new JButton("Botão 1");
+        JButton jButton = new JButton("Menu");
         jButton.setBounds(50, 50, 100, 50);// X orizontal Y vertical WIDTH  tamanho do botáo  HEIGHT autura do botão
         jButton.setFont(new Font("Arial", Font.BOLD, 10));// Ajuste da fonte
         jButton.setForeground(new Color(255, 255, 255));
