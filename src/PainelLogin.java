@@ -96,5 +96,4 @@ public class PainelLogin extends JFrame{
                 null, "enviar", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
     }
 
-
 }
