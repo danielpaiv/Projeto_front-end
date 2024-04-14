@@ -8,21 +8,16 @@ public class PainelPricipal extends JFrame {
 
     private JButton jButton;
 
-
     public PainelPricipal(PopupMenu painelPricipal){
         PainelPricipal = painelPricipal;
-
         this.add(PainelPricipal);
-
         setLayout(null);
-
-
     }
 
     public PainelPricipal() {
-
         PainelPricipal = null;
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //janela
         setTitle("Painel Pricipal");
         setVisible(true);// renderiza a janela
@@ -32,6 +27,7 @@ public class PainelPricipal extends JFrame {
         setLocationRelativeTo(null);// Ajusta a janela para o centro da tela
         setLayout(null);
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Botao 1
         JButton jButton = new JButton("Cadastrar");
         jButton.setBounds(50, 50, 100, 50);// X orizontal Y vertical WIDTH  tamanho do botáo  HEIGHT autura do botão
@@ -40,6 +36,7 @@ public class PainelPricipal extends JFrame {
         jButton.setBackground(new Color(21, 81, 213));
         add(jButton);
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Botao 2
         JButton jButton2 = new JButton("Consultar");
         jButton2.setBounds(285, 50, 100, 50);// X orizontal Y vertical WIDTH  tamanho do botáo  HEIGHT autura do botão
@@ -48,6 +45,7 @@ public class PainelPricipal extends JFrame {
         jButton2.setBackground(new Color(21, 81, 213));
         add(jButton2);
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Botao 3
         JButton jButton3 = new JButton("Voltar");
         jButton3.setBounds(530, 50, 100, 50);// X orizontal Y vertical WIDTH  tamanho do botáo  HEIGHT autura do botão
@@ -56,6 +54,7 @@ public class PainelPricipal extends JFrame {
         jButton3.setBackground(new Color(21, 81, 213));
         add(jButton3);
 
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //Chama o evento do botão
         jButton.addActionListener(this::botao4);//Botão cadastrar
         jButton2.addActionListener(this:: botao3);//Botão consultar
@@ -63,7 +62,9 @@ public class PainelPricipal extends JFrame {
 
     }
 
-    private void botao5(ActionEvent actionEvent) {//Botão voltar
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Botão voltar
+    private void botao5(ActionEvent actionEvent) {
         PainelInicio painelInicio = new PainelInicio();//Chama a janela desejada
         painelInicio.setVisible(true);
         dispose();//fecha a janela
@@ -72,11 +73,16 @@ public class PainelPricipal extends JFrame {
 //                null, "Voltar", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
     }
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Botão consultar
     private void botao3(ActionEvent actionEvent) {//Botão consultar
 
 
     }
-    private void botao4(ActionEvent actionEvent) {//Botão cadastrar
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Botão cadastrar
+    private void botao4(ActionEvent actionEvent) {
         PainelCadastro painelCadastro = new PainelCadastro();
         painelCadastro.setVisible(true);
         dispose();

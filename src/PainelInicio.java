@@ -9,6 +9,7 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
     private JButton jButton;
 
 
+
     public PainelInicio() {
 
 
@@ -24,6 +25,7 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
         setLayout(null);
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         //Botao 1
         JButton jButton = new JButton("Menu");
@@ -32,8 +34,10 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
         jButton.setForeground(new Color(255, 255, 255));
         jButton.setBackground(new Color(21, 81, 213));
         add(jButton);
-//
-//        //Botao 2
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//      //Botao 2
         JButton jButton2 = new JButton("Login");
         jButton2.setBounds(200, 50, 100, 50);// X move P direita e P esqyuerda Y P cima P baixo WIDTH  tamanho P direita  HEIGHT autura P cima
         jButton2.setFont(new Font("Arial", Font.BOLD, 10));// Ajuste da fonte
@@ -41,11 +45,11 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
         jButton2.setBackground(new Color(21, 81, 213));
         add(jButton2);
 
-
         jButton.addActionListener(this::botao1);
         jButton2.addActionListener(this:: botao2);
 
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //Cama a função para o botão1
     private void botao1(ActionEvent actionEvent) {
@@ -57,6 +61,7 @@ public class PainelInicio extends JFrame  {// Exemplo 2 usando 'extends JFrame'
 //        JOptionPane.showMessageDialog(
 //                null, "Bortao 1", "Titulo", JOptionPane.WARNING_MESSAGE);//Adciona uma menssage de alerte
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     //Cama a função para o botão2
     private void botao2(ActionEvent actionEvent) {
