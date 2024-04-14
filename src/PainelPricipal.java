@@ -27,7 +27,7 @@ public class PainelPricipal extends JFrame {
         setTitle("Painel Pricipal");
         setVisible(true);// renderiza a janela
         setSize(700, 500);// Ajusta o tamanho da janela
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// comando para fechar o programa
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);// comando para fechar o programa
         setResizable(false);// Bloqueia o ajuste da janela
         setLocationRelativeTo(null);// Ajusta a janela para o centro da tela
         setLayout(null);

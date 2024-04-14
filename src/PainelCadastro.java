@@ -24,7 +24,7 @@ public class PainelCadastro extends JFrame{
         setVisible(true);// renderiza a janela
         setSize(500, 300);// Ajusta o tamanho da janela
         setBackground(new Color(18,103,249));
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);// comando para fechar o programa
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);// comando para fechar o programa
         setResizable(false);// Bloqueia o ajuste da janela
         setLocationRelativeTo(null);// Ajusta a janela para o centro da tela
         setLayout(null);
